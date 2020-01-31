@@ -1,5 +1,5 @@
 //
-//  ContraintsViewController.swift
+//  ContraintsAnimationsController.swift
 //  UIKit_Animations
 //
 //  Created by Tiffany Obi on 1/31/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ContraintsViewController: UIViewController {
+class ContraintsAnimationsController: UIViewController {
 
     override func viewDidLoad() {
         view.backgroundColor = .systemBlue

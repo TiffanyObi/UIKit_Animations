@@ -13,9 +13,11 @@
 		3EE91B2623E47FB300BD2B7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EE91B2523E47FB300BD2B7C /* Assets.xcassets */; };
 		3EE91B2923E47FB300BD2B7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EE91B2723E47FB300BD2B7C /* LaunchScreen.storyboard */; };
 		3EE91B3423E47FB300BD2B7C /* UIKit_AnimationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE91B3323E47FB300BD2B7C /* UIKit_AnimationsTests.swift */; };
-		3EE91B3F23E4806E00BD2B7C /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE91B3E23E4806E00BD2B7C /* TabViewController.swift */; };
+		3EE91B3F23E4806E00BD2B7C /* AnimationsTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE91B3E23E4806E00BD2B7C /* AnimationsTabController.swift */; };
 		3EE91B4123E481F800BD2B7C /* SampleAnimationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE91B4023E481F800BD2B7C /* SampleAnimationsViewController.swift */; };
-		3EE91B4323E4820F00BD2B7C /* ContraintsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE91B4223E4820F00BD2B7C /* ContraintsViewController.swift */; };
+		3EE91B4323E4820F00BD2B7C /* ContraintsAnimationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE91B4223E4820F00BD2B7C /* ContraintsAnimationsController.swift */; };
+		3EE91B4523E486DC00BD2B7C /* SampleAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE91B4423E486DC00BD2B7C /* SampleAnimationView.swift */; };
+		3EE91B4923E49B8100BD2B7C /* Contraints_Animation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EE91B4823E49B8100BD2B7C /* Contraints_Animation.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +41,11 @@
 		3EE91B2F23E47FB300BD2B7C /* UIKit_AnimationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIKit_AnimationsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EE91B3323E47FB300BD2B7C /* UIKit_AnimationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKit_AnimationsTests.swift; sourceTree = "<group>"; };
 		3EE91B3523E47FB300BD2B7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3EE91B3E23E4806E00BD2B7C /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		3EE91B3E23E4806E00BD2B7C /* AnimationsTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsTabController.swift; sourceTree = "<group>"; };
 		3EE91B4023E481F800BD2B7C /* SampleAnimationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAnimationsViewController.swift; sourceTree = "<group>"; };
-		3EE91B4223E4820F00BD2B7C /* ContraintsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContraintsViewController.swift; sourceTree = "<group>"; };
+		3EE91B4223E4820F00BD2B7C /* ContraintsAnimationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContraintsAnimationsController.swift; sourceTree = "<group>"; };
+		3EE91B4423E486DC00BD2B7C /* SampleAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAnimationView.swift; sourceTree = "<group>"; };
+		3EE91B4823E49B8100BD2B7C /* Contraints_Animation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Contraints_Animation.storyboard; path = "UIKit_Animations/CONTROLLERS !/Contraints_Animation.storyboard"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,11 +87,10 @@
 		3EE91B1B23E47FAE00BD2B7C /* UIKit_Animations */ = {
 			isa = PBXGroup;
 			children = (
+				3EE91B4723E48C1700BD2B7C /* CONTROLLERS ! */,
+				3EE91B4623E48BE900BD2B7C /* VIEWS ! */,
 				3EE91B1C23E47FAE00BD2B7C /* AppDelegate.swift */,
 				3EE91B1E23E47FAE00BD2B7C /* SceneDelegate.swift */,
-				3EE91B3E23E4806E00BD2B7C /* TabViewController.swift */,
-				3EE91B4023E481F800BD2B7C /* SampleAnimationsViewController.swift */,
-				3EE91B4223E4820F00BD2B7C /* ContraintsViewController.swift */,
 				3EE91B2223E47FAE00BD2B7C /* Main.storyboard */,
 				3EE91B2523E47FB300BD2B7C /* Assets.xcassets */,
 				3EE91B2723E47FB300BD2B7C /* LaunchScreen.storyboard */,
@@ -103,6 +106,25 @@
 				3EE91B3523E47FB300BD2B7C /* Info.plist */,
 			);
 			path = UIKit_AnimationsTests;
+			sourceTree = "<group>";
+		};
+		3EE91B4623E48BE900BD2B7C /* VIEWS ! */ = {
+			isa = PBXGroup;
+			children = (
+				3EE91B4823E49B8100BD2B7C /* Contraints_Animation.storyboard */,
+				3EE91B4423E486DC00BD2B7C /* SampleAnimationView.swift */,
+			);
+			path = "VIEWS !";
+			sourceTree = "<group>";
+		};
+		3EE91B4723E48C1700BD2B7C /* CONTROLLERS ! */ = {
+			isa = PBXGroup;
+			children = (
+				3EE91B3E23E4806E00BD2B7C /* AnimationsTabController.swift */,
+				3EE91B4023E481F800BD2B7C /* SampleAnimationsViewController.swift */,
+				3EE91B4223E4820F00BD2B7C /* ContraintsAnimationsController.swift */,
+			);
+			path = "CONTROLLERS !";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +210,7 @@
 			files = (
 				3EE91B2923E47FB300BD2B7C /* LaunchScreen.storyboard in Resources */,
 				3EE91B2623E47FB300BD2B7C /* Assets.xcassets in Resources */,
+				3EE91B4923E49B8100BD2B7C /* Contraints_Animation.storyboard in Resources */,
 				3EE91B2423E47FAE00BD2B7C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,9 +229,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EE91B3F23E4806E00BD2B7C /* TabViewController.swift in Sources */,
+				3EE91B3F23E4806E00BD2B7C /* AnimationsTabController.swift in Sources */,
+				3EE91B4523E486DC00BD2B7C /* SampleAnimationView.swift in Sources */,
 				3EE91B1D23E47FAE00BD2B7C /* AppDelegate.swift in Sources */,
-				3EE91B4323E4820F00BD2B7C /* ContraintsViewController.swift in Sources */,
+				3EE91B4323E4820F00BD2B7C /* ContraintsAnimationsController.swift in Sources */,
 				3EE91B1F23E47FAE00BD2B7C /* SceneDelegate.swift in Sources */,
 				3EE91B4123E481F800BD2B7C /* SampleAnimationsViewController.swift in Sources */,
 			);

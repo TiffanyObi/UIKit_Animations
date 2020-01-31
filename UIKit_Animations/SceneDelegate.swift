@@ -26,7 +26,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.windowScene = windowScene
         
         // set the initial view controller
-        window?.rootViewController = TabViewController()
+        window?.rootViewController = AnimationsTabController()
         
         // shows the window and makes it the key window
         window?.makeKeyAndVisible()
